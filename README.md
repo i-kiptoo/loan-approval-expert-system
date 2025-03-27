@@ -12,13 +12,24 @@ This is a Streamlit-based web application that evaluates loan applications using
 
 ### Prerequisites
 Make sure you have Python installed on your system. Then, install the required dependencies:
+
 ```sh
 pip install -r requirements.txt
+```
 
 **Note:** To avoid compatibility issues, such as errors related to `collections.Mapping` in Python 3.10+, ensure that `frozendict==2.3.8` is installed:
 ```sh
 pip install frozendict==2.3.8
 ```
+
+### Virtual Environment Setup (Recommended)
+To prevent dependency conflicts, create a virtual environment:
+
+```sh
+python3 -m venv venv
+source venv/bin/activate  # On macOS/Linux
+venv\Scripts\activate    # On Windows
+pip install -r requirements.txt
 ```
 
 ## Usage
@@ -49,13 +60,22 @@ The expert system applies specific rules to determine whether the loan is approv
 You can access the live application here: [Loan Approval Expert System](https://loan-approval-expert-system.streamlit.app/)
 
 ## Files in this Repository
+- `.streamlit/` - Contains the Streamlit configuration files.
 - `main.py` - The main application file containing the expert system and Streamlit UI.
 - `requirements.txt` - List of required dependencies.
-- `.streamlit` - Contains the Streamlit configuration files.
 - `.gitignore` - Git ignore file to exclude unnecessary files from version control.
 
+
 ## Authors
-Developed by [Denis Kimathi Mugambi], [Brian Gatoto], [Joe Kuya], [Billy Kiplangat Ngetich], [Omondi Isaac Odhiambo], [Calvin Kirui], [Caltone Smith], and [Kiptoo Ian].
+Developed by: 
+- Denis Kimathi Mugambi 
+- Brian Gatoto
+- Joe Kuya
+- Billy Kiplangat Ngetich
+- Omondi Isaac Odhiambo
+- Calvin Kirui
+- Caltone Smith
+- Kiptoo Ian
 
 ## License
 This project is licensed under the MIT License.
