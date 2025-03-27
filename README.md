@@ -1,4 +1,4 @@
-# Loan Application Evaluation System
+# Loan Approval Expert System
 
 This is a Streamlit-based web application that evaluates loan applications using an expert system built with Experta. The system determines whether a loan should be approved or denied based on various applicant details.
 
